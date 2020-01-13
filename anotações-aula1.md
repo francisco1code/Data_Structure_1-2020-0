@@ -1,3 +1,6 @@
+# Aula 1 - Revisão de Computação Básica
+
+
 # Propriedades do printf() e scanf()
 
 - o printf() retorna um inteiro que representa a quantidade de caracteres mostrados na tela.
