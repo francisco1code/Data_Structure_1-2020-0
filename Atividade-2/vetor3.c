@@ -26,11 +26,12 @@ int main(){
 				printf(" ");
 			}
 			else{
-				printf("\n");
+				//printf("\n");
 				break;
 			}
 		}
 	}
+	printf("\n");
 	for(int i=0;i<N;i++){
 		if((vet[i]%2)!=0){
 			odd--;
@@ -39,11 +40,12 @@ int main(){
 				printf(" ");
 			}
 			else{
-				printf("\n");
-				break;
+				//printf("\n");
 			}
 		}
 	}
+
+	printf("\n");
 
 
 	return 0;
