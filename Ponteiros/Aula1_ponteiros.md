@@ -59,7 +59,9 @@ Para acessar o conteúdo da variável do endereço guarado pelo ponteiro, utiliz
 
 ### 1. Passagem por referência
 
-Em C, parêmetros são passados para funções por valor. Para fazer passagem por referência, utilizamps ponteiros. Como por exemplo na função `scanf()`.
+Em C, parêmetros são passados para funções por valor. Para fazer passagem por referência, utilizamos ponteiros. Como por exemplo na função `scanf()`.
+
+Para fazer isso utilizamos o operador '&'.	
 
 - Ex: 
 	
