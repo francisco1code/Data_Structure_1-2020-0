@@ -17,3 +17,5 @@
 - Lógica por trás do array.
 
             int v[10] // v é um ponteiro de 8 bytes // e [10] é um espaço de 40 bytes; 
+
+- Um vetor é sempre passado por referência
