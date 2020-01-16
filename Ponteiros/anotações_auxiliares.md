@@ -13,3 +13,7 @@
 - O sistema operacional separa o espaço de memória de forma separada para cada tipo de variável de execução.
 
 </p>![memo_map](./img/memo_map.jpg)
+
+- Lógica por trás do array.
+
+            int v[10] // v é um ponteiro de 8 bytes // e [10] é um espaço de 40 bytes; 
