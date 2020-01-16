@@ -1,1 +1,1 @@
-PA saiu na posicao (0,3) no passo 3
+Encontraram-se na posicao (5,1) no passo 4

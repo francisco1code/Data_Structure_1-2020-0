@@ -3,8 +3,9 @@
 int main(int argc, char const *argv[])
 {
 	
-	int n;
-	int maior=0;
+	int n, maior;
+
+	scanf("%d", &maior);
 
 	while(scanf("%d", &n)!=EOF){
 		if(n>maior){

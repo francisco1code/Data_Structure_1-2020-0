@@ -1,38 +1,67 @@
 #include<stdio.h>
 #include<string.h>
+#include<ctype.h>
+#define MAX 100
 
 int main(){
-	char text[100], nome[100], sobrenome[100];
-	const char *email = "@unb.br";
-	int cont=0, j=0;
+	char * email = "@unb.br";
+	char ans[MAX], text[MAX], nome[MAX], sobre[MAX];
+	int i = 0, space=0, k=0, j=0;
+
 	scanf("%[^\n]", &text);
-	printf("%s\n", text);
-	//fgets(text, 100, stdin);
-	//text[strlen(text)-1] = '\0';
 
-	for(int i = 0;i<strlen(text);i++){
-		if(text[i]==' '){
-			cont = i;
+	while(text[i]!='\0'){
+		if (text[i] == ' '){
+			space = i;
 		}
-		else{
-			nome[i] = text[i];
-		}
+		i++;
 	}
-	
-	nome[cont] = '\0';
 
-	for(int i=cont;i<(strlen(text)-1);i++){
-		sobrenome[j] = text[i+1];
+	i = 0;
+
+	while(text[i]!=' '){
+		
+		nome[i] = tolower(text[i]);
+		i++;
+	}
+
+	nome[i] = '\0';
+
+	while(text[space+1]!='\0'){
+		sobre[k] = tolower(text[space+1]);
+		space++;
+		k++;
+	}
+
+	sobre[k] = '\0';
+
+	i=0;
+	k=0;
+	j=0;
+
+
+	while(nome[i]!='\0'){
+		ans[i] = nome[i];
+		i++;
+	}
+
+	ans[i++] = '.';
+
+	while(sobre[j]!='\0'){
+		ans[i] = sobre[j];
+		i++;
 		j++;
 	}
-	nome[strlen(nome)] = '\0';
-	sobrenome[strlen(sobrenome)] = '\0';
-	nome[0] = tolower(nome[0]);
-	sobrenome[0] = tolower(sobrenome[0]);
-	strcat(nome, ".");
-	strcat(nome,sobrenome);
-	strcat(nome,email);
-	printf("%s\n", nome);
+
+	while(*(email+k)!='\0'){
+		ans[i] = *email++;
+		i++;
+		k++;
+	}
+
+	ans[i] = '\0';
+
+	printf("%s\n", ans);
 	
 	return 0;
 }
