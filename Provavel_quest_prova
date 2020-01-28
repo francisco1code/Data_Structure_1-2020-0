@@ -1,0 +1,8 @@
+Buscar
+   
+            int cont_busca(celula *p, int x){
+              if(p==NULL) return 0;
+              else if(p->dadi==x) return conta_busca(p->prox, x)+1;
+              else 
+              return conta_busca(p->prox,x);
+              }
